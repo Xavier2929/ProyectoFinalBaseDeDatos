@@ -6,12 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="estilos.css">
+
+
+
 </head>
-
-
-
-
-
 
 <body>
     
@@ -26,12 +24,12 @@
 <button type="button" class="toggle-btn" onclick="register()">Registrar</button>
 </div>
 
-<form class="input-group" id="login">
+<form class="input-group" id="login" action="login.php" method="post"> 
 
-    <input type="text" class="input-field" placeholder="ID de usuario" required>
-    <input type="text" class="input-field" placeholder="Introduzca contraseña" required>
+    <input type="text" class="input-field" placeholder="ID de usuario" name="id" required>
+    <input type="password" class="input-field" placeholder="Introduzca contraseña" name= "password" required>
     <input type="checkbox" name="" class="chech-box"> <span>Recordar Contraseña</span>
-    <button type="submit" class="subtmit-btn" >Login</button>
+    <button type="submit" class="subtmit-btn"> Login</button>
     
 </form>
 
@@ -39,7 +37,7 @@
     <form class="input-group" id="register"  action="register.php" method="post"  >
 
         <input type="text" class="input-field" placeholder="ID de usuario" name="id" required>
-        <input type="email" class="input-field" placeholder="Email ID" name="email" required>
+        <input type="email" class="input-field" placeholder="Email" name="email" required>
         <input type="password" class="input-field" placeholder="Introduzca contraseña" name="password" required>
         <input type="checkbox"  class="chech-box"> <span>Accedo a las normas y reglas de la Pagina</span>
         <button type="submit" class="subtmit-btn" >Registrarse</button>

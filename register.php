@@ -21,7 +21,7 @@ if($num==1){
 }else{
     $reg="insert into usuarios(id,email,password) values('$id','$email','$password')";
     mysqli_query($con,$reg);
-    echo"El Usuario ha sido registrado de manera exitosa";
+    echo "El Usuario ha sido registrado de manera exitosa";
 }
 ?>
 
