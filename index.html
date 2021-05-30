@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    
+<div class="fondo"> 
+ <div class="form-box">
+
+<div class="button-box">
+
+<div id="btn"></div>
+
+<button type="button" class="toggle-btn" onclick="login()">Login</button>
+<button type="button" class="toggle-btn" onclick="register()">Registrar</button>
+</div>
+
+<form class="input-group" id="login">
+
+    <input type="text" class="input-field" placeholder="ID de usuario" required>
+    <input type="text" class="input-field" placeholder="Introduzca contraseña" required>
+    <input type="checkbox" name="" class="chech-box"> <span>Recordar Contraseña</span>
+    <button type="submit" class="subtmit-btn">Login</button>
+    
+    
+    </form>
+
+
+    <form class="input-group" id="register" method="post" action="register.php" >
+
+        <input type="text" class="input-field" placeholder="ID de usuario" name="id" required>
+        <input type="email" class="input-field" placeholder="Email ID" name="email" required>
+        <input type="text" class="input-field" placeholder="Introduzca contraseña" name="password" required>
+        <input type="checkbox" name="" class="chech-box"> <span>Accedo a las normas y reglas de la Pagina</span>
+        <button type="submit" class="subtmit-btn" >Registrarse</button>
+        
+        
+        </form>
+
+</div>   
+ 
+</div>
+
+<script>
+var x = document.getElementById("login")
+var y = document.getElementById("register")
+var z = document.getElementById("btn")
+
+function register(){
+    x.style.left="-400px";
+    y.style.left="50px";
+    z.style.left="110px"
+}
+function login(){
+    x.style.left="50px";
+    y.style.left="450px";
+    z.style.left="0"
+}
+
+</script>
+
+</body>
+</html>
